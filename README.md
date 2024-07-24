@@ -2,7 +2,7 @@
 
 ## The Odin Project
 
-A simple description
+A responsive homepage
 
 Links:
 
