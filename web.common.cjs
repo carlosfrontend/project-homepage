@@ -18,7 +18,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       favicon: 'favicon.svg',
-      title: '',
+      title: 'carlosfrontend - homepage',
       inject: 'body',
     }),
     new MiniCssExtractPlugin({

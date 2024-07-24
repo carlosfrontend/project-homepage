@@ -3,7 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body></body>
+  <body>
+    <div class="page-container">
+      <header class="header">
+        <div class="img-box">
+          <img src="" class="header-img" alt="" />
+          <h1 class="title">Carlos Pulido</h1>
+        </div>
+        <section class="about-card">
+          <div class="subtitle-container">
+            <h2>About Me</h2>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello, I'm <em>Carlos</em> a
+              <strong>fullstack developer</strong> from Madrid Spain, passionate
+              about web development and new technologies.
+            </p>
+
+            <p>
+              I started getting interested in programming back in 2016. Since
+              then I have not stopped learning.
+            </p>
+
+            <p>Currently <strong>finishing the Odin Project</strong>.</p>
+            <p>You can see some of my projects below.</p>
+            <p>
+              They are all made with <em>HTML</em>, <em>CSS</em> and <em>Javascript.</em></p>
+              <p>
+                I hope you like them!.</p>
+            </p>
+          </div>
+
+          <ul class="social-media-container">
+            <a href=""><img src="" alt="Github logo" /></a
+            ><a href=""><img src="" alt="Linkedin Logo" /></a
+            ><a href=""><img src="" alt="Twitter logo" /></a>
+          </ul>
+        </section>
+      </header>
+    </div>
+  </body>
 </html>

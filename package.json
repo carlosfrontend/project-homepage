@@ -1,7 +1,7 @@
 {
-  "name": "template",
+  "name": "homepage",
   "version": "1.0.0",
-  "description": "Template description",
+  "description": "A Responsive Homepage",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlosfrontend/battleship-game.git"
+    "url": "git+https://github.com/carlosfrontend/project-homepage.git"
   },
   "keywords": [],
   "author": "carlosfrontend",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/carlosfrontend/battleship-game/issues"
+    "url": "https://github.com/carlosfrontend/project-homepage/issues"
   },
-  "homepage": "https://github.com/carlosfrontend/battleship-game#readme",
+  "homepage": "https://github.com/carlosfrontend/project-homepage#readme",
   "devDependencies": {
     "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
