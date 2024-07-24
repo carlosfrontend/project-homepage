@@ -1,42 +1,44 @@
-*{
+* {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
+body {
+  height: 200vh;
   padding: 3.8em 5em;
-  background:#0891b2;
+  background-color: #fff;
 }
-body::before{
-  content: '';
+body::before {
+  content: "";
   position: absolute;
-  bottom: 0;
-  left: 0;
+  height: 100%;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  height: 100vh;
-  background: #ffffff;
-  clip-path: polygon(100% 40%, -10% 100%, 100% 100%);
+  background: #0891b2;
+  clip-path: polygon(0% 90%, 0% 0%, 400% -100%);
   z-index: -1;
 }
-.header{
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.title{
+.title {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   line-height: 1;
   text-align: center;
   position: relative;
-  color:#fff;
+  color: #fff;
   bottom: 1.25em;
   font-size: 5rem;
-  background-color: #0d0d0dc8;
+  background-color: #0d0d0d91;
   padding: 8px;
+  text-shadow: 3px px 5px #000;
 }
 
 .header-img {
@@ -44,11 +46,11 @@ body::before{
   object-fit: contain;
 }
 
-.about-card{
+.about-card {
   border: 1px solid black;
   min-height: 500px;
   padding: 1em 2em;
-  max-width: 100%;
+  max-width: 51%;
   box-shadow: 5px 5px 1px 1px #55555530;
   background-color: #fff;
   display: flex;
@@ -56,12 +58,13 @@ body::before{
   justify-content: space-between;
 }
 
-.subtitle-container h2 {
+.subtitle-container h2,
+.main-content h2 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 3rem;
 }
-.about-card  p {
+.about-card p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -69,14 +72,66 @@ body::before{
   text-align: left;
 }
 
-.social-media-container{
+.social-media-container {
   display: flex;
   justify-content: end;
   gap: 1em;
   margin-top: 1em;
 }
 
-.social-media-container > a > img{
+.social-media-container > a > img {
   height: 3em;
   width: 3em;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-items: center;
+  align-content: center;
+}
+
+.project-description {
+  width: 300px;
+}
+
+.main-content h2 {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.description-header{
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1em;
+}
+
+.gh-image, .new-tab-image {
+  width: 25px;
+  height: 25px;
+  margin: .5em;
+}
+
+.description-header h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-left: .3em;
+}
+
+.description-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  width: 380px;
+  font-weight: 300;
+  padding-left: .5em;
+  padding-bottom: .5em;
+}
+
+.card{
+  box-shadow: 4px 7px 7px 0px #8080805e;
+  margin-bottom: 2em;
 }
