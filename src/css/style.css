@@ -5,7 +5,6 @@
 }
 
 body {
-  height: 200vh;
   padding: 3.8em 5em;
   background-color: #fff;
 }
@@ -50,7 +49,6 @@ body::before {
   border: 1px solid black;
   min-height: 500px;
   padding: 1em 2em;
-  max-width: 51%;
   box-shadow: 5px 5px 1px 1px #55555530;
   background-color: #fff;
   display: flex;
@@ -59,7 +57,7 @@ body::before {
 }
 
 .subtitle-container h2,
-.main-content h2 {
+.main-content h2, .contact-me h2 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   font-size: 3rem;
@@ -86,14 +84,12 @@ body::before {
 
 .projects {
   display: grid;
-  grid-gap: 0.5em;
+  grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  justify-items: center;
-  align-content: center;
 }
 
 .project-description {
-  width: 300px;
+  width: 100%;
 }
 
 .main-content h2 {
@@ -101,12 +97,19 @@ body::before {
   padding-bottom: 1em;
 }
 
+.project-thumb{
+  width: auto;
+}
+
+.project-thumb > a > img {
+  width: 100%;
+}
 .description-header{
-  width: 380px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: "Playfair Display", serif;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -127,11 +130,60 @@ body::before {
   font-size: 1.3rem;
   width: 380px;
   font-weight: 300;
-  padding-left: .5em;
+  padding-left: 1.6em;
   padding-bottom: .5em;
 }
 
 .card{
   box-shadow: 4px 7px 7px 0px #8080805e;
   margin-bottom: 2em;
+}
+
+footer.contact-me {
+  background-color: #0891b2;
+  color:#ffffff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 5em;
+  display: flex;
+  gap: 4em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  padding: 5em;
+}
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+}
+
+.img-container > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-container {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+gap: 2.8em;
+}
+.contact-container > *{
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.footer-social-media {
+  width: 100%;
+  display: flex;
+  gap:1em;
+}
+
+.footer-social-media > a > img{
+  width: 1.8em;
+  height: 1.8em;
 }
