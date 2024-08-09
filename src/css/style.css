@@ -54,6 +54,7 @@ html::before {
   color: #ffffff;
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
+  z-index: 1;
 }
 
 .main-content {
@@ -193,7 +194,65 @@ html::before {
 
 @media (min-width: 600px) and (max-width: 1200px) {
   body {
-    background-color: orange;
+    /* background-color: rgb(37, 132, 17); */
+  }
+  header{
+    display: block;
+    width: 45vw;
+    padding: 2em;
+    float: left;
+  }
+
+  header img{
+    transform: rotateY(180deg);
+    z-index: 1;
+    padding: 0;
+    margin-left: 4em;
+    margin-top: 1em;
+  }
+
+  .social-media-container {
+    visibility: hidden;
+  }
+
+  .title{
+    position: absolute;
+    right: 0.2em;
+    top: 1em;
+    font-size: 10vw;
+    font-weight: 300;
+  }
+
+  .about-card {
+    position: relative;
+    background-color: #ffffff;
+    top:14em;
+    left: 4em;
+    width: 65vw;
+    box-shadow: 2px 2px 8px #25222240;
+    margin-bottom: 19em;
+    margin-top: 14em;
+    margin-left: 6em;
+  }
+
+  .subtitle-container h2 {
+    padding-top: 2em;
+  }
+
+  .text-container{
+    padding: 1em;
+  }
+
+  .text-container + p {
+    position: relative;
+    text-align: justify;
+    display: inline;
+    line-height: 1.3em;
+    
+  }
+
+  .main-content {
+    top: -15em;
   }
 }
 
